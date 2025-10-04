@@ -1,3 +1,3 @@
 export default function NotFound() {
-  return <h2>404 - Lỗi</h2>;
+  return <h2>X - 404 - Lỗi</h2>;
 }

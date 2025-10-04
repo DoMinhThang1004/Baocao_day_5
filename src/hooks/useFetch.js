@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
 export default function useFetch(url) {
-  const [data, setData] = useState([]); // mặc định lúc đầu rỗng
+  const [data, setData] = useState([]); // auto rỗng lúc đầu
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    setLoading(true);  // chạy loading khi thay đổi url 
+    setLoading(true);  // loading lại
     setError(null);    // reset
     fetch(url)
       .then((res) => {
